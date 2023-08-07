@@ -163,7 +163,7 @@ h6 {
 }
 
 .bg-escuro {
-	background: #c9dfce;
+	background: #ffffff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -231,7 +231,7 @@ color: #fe7e00;
 }
 
 .bg-escuro {
-	background: #c9dfce;
+	background: #ffffff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -551,7 +551,7 @@ margin: auto;
 	}
 
 	.bg-escuro {
-	background: #c9dfce;
+	background: #ffffff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
