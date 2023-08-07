@@ -6,7 +6,7 @@ $(document).ready(function () {
 });	
 
 $(document).ready(function () {
-  var $element = $('#nucleo-title-aside');
+  var $element = $('#VirtualMap-title-aside');
   var $follow = $element.find('.title-aside-wrapper');
   var followHeight = $element.find('.title-aside-wrapper').outerHeight();
   var height = $element.outerHeight();

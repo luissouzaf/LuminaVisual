@@ -1,7 +1,7 @@
 /*
-Theme Name: Núcleo Cultural Theme
-Author: Luana Menezes e Luís Fernando
-Description: A theme created for Núcleo Cultural's website
+Theme Name: Virtual Map Theme
+Author:Luís Fernando
+Description: A theme created for Virtual Map's website
 Version: 1.0
 */
 
@@ -69,6 +69,7 @@ h6 {
 .title-aside {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100 !important;
+  /*font-weight: bold;*/
   -webkit-transform: translate3d(0, 0, 0);
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
@@ -97,8 +98,8 @@ h6 {
 -------------------------------------------------- */
 
 #logo {
-  height: 3.125rem;
-  width: 9.375rem
+  height: 4rem;
+
 }
 
 
@@ -131,6 +132,10 @@ h6 {
 	color: #fe7e00;
 }
 
+.verde{
+	color:#128c41;
+}
+
  .fundo-quemsomos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +143,7 @@ h6 {
   background: white;
   padding: 0.9375rem;
   margin: auto;
+  padding-bottom: 3rem;
 }
 
 #texto-missao{
@@ -157,7 +163,7 @@ h6 {
 }
 
 .bg-escuro {
-	background: #252525;
+	background: #c9dfce;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -176,7 +182,35 @@ font-size: 3rem;
 color: #fe7e00;
 }
 .seta-baixo{
-	padding-top: 0.625rem;
+	padding-top: 0.025rem;
+}
+@keyframes animacao {
+	/*from {font-size: 3rem;}
+	to {font-size: 4rem;}*/
+	0%   {top:-2rem;}
+	50%  {top:2rem;}
+	100% {top:-2rem;}
+}
+
+@keyframes animacaob {
+	/*from {font-size: 3rem;}
+	to {font-size: 4rem;}*/
+	0%   {font-size: 2.5rem;}
+	25%  {font-size: 3rem;}
+	50%  {font-size: 3.5rem;}
+	100% {font-size: 3rem;}
+}
+.pulsar{
+	position: relative;
+	animation-name: animacao;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.pulsarb{
+	animation-name: animacaob;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
 .zoom{
@@ -197,7 +231,7 @@ color: #fe7e00;
 }
 
 .bg-escuro {
-	background: #252525;
+	background: #c9dfce;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -214,6 +248,7 @@ color: #fe7e00;
 	border-radius: 1.25rem;
 	padding: 1.25rem;
 	margin: auto;
+	margin-bottom: 2rem;
 }
 
 .texto-branco{
@@ -264,12 +299,14 @@ margin: auto;
  SERVIÇOS
 -------------------------------------------------- */
 .servicos-item {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
 .servicos-item img {
-  width: 160px;
+  width: 150px;
   margin-bottom: 1rem;
 }
 
@@ -447,8 +484,9 @@ margin: auto;
 @media (min-width: 992px) {
 
 	#imagem-quemsomos{
-		padding: 2.4rem 1.9rem 1rem 1.4rem;
-		margin: auto;
+		padding: 2rem 1.5rem 0.5rem 1.3rem;
+		
+		margin: 3.5rem 1.2rem 0.5rem 0.8rem;
 	}
 	
 	.img-redonda{
@@ -477,10 +515,14 @@ margin: auto;
 	  display: -ms-flexbox;
 	  display: flex;
 	  background: white;
-	  height: 33.125rem;
+	  height: 34.125rem;
 	  padding: 3rem;
-	  padding-bottom:0;
+	  padding-bottom: 0rem;
 	  padding-right: 5rem;
+	}
+
+	.seta-quemsomos{
+		height: 6rem;
 	}
 
 	.cards>div:nth-child(odd) {
@@ -509,7 +551,7 @@ margin: auto;
 	}
 
 	.bg-escuro {
-	background: #252525;
+	background: #c9dfce;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -517,7 +559,15 @@ margin: auto;
 	padding: 1.875rem;
 	margin: auto;
 	}
-	
+
+	.cardSombra{
+		box-shadow: 0 10px 14px 0 rgba(0,0,0,0.2);
+	}
+
+	#textoSombra{
+		text-shadow: 4px 4px 8px #000000;
+	}
+
 	.imagem-redesociais{
 	/*margin: auto;*/
 	padding-left: 0.625rem;
